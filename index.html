@@ -13,47 +13,47 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="./custom.js"></script>
+		<link rel="stylesheet" href="./mystyle.scss">
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="landing">
 
 		<!-- Header -->
+		<header id="header" class="alt skel-layers-fixed">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">がおPortfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-			<header id="header" class="alt skel-layers-fixed">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="#">がおPortfolio</a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#a1">がおについて</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#a2">自己紹介</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#product">プロダクト</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#a3">言語</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#a4">フレームワーク</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#a5">開発環境</a>
-                      </li>
-                      </ul>
-                  </div>
-                </nav>
-        </header>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#a1">がおについて</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#a2">自己紹介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">プロダクト</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#a3">言語</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#a4">フレームワーク</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#a5">開発環境</a>
+            </li>
+            </ul>
+	        </div>
+	      </nav>
+      </header>
 
 		<!-- Banner -->
 		<div class="container-fluid">
@@ -61,106 +61,107 @@
 				<div class="col-md-8 offset-md-2">
 					<section id="banner">
 						<div class="inner">
-		                	<h2 id="a1">がおについて</h2>
+            	<h2 id="a1">がおについて</h2>
+            	<div class="img_myself"><img src="../picture/myself_image.png"></img></div>
 							<p>あまり社会人っぽくない人。東南アジア移住が当面の目標。</p>
 						</div>
 					</section>
 					
-	                <h2 id="a2">自己紹介</h2>
+          <h2 id="a2">自己紹介</h2>
 					<table class="table">
-					    <tbody>
-					        <tr>
-					            <th>名前</th>
-					            <td>がお</td>
-					        </tr>
-					        <tr>
-					            <th>Twitter</th>
-					            <td><a href="">@gao</a></td>
-					        </tr>
-					        <tr>
-					            <th>所属</th>
-					            <td>合同会社リンクネクスト</td>
-					        </tr>
-					        <tr>
-					            <th>場所</th>
-					            <td>大阪 - タイ</td>
-					        </tr>
-					        <tr>
-					            <th>趣味</th>
-					            <td>資産運用、Webサイト作成、ライフハック、政治経済</td>
-					        </tr>
-					        <tr>
-					            <th>好き</th>
-					            <td>シンプル、東南アジア、緑色、自然、お寿司、優しいお味の料理</td>
-					        </tr>
-	            </tbody>
+				    <tbody>
+			        <tr>
+			            <th>名前</th>
+			            <td>がお</td>
+			        </tr>
+			        <tr>
+			            <th>Twitter</th>
+			            <td><a href="https://twitter.com/evening_grow_g" target="_blank">@gao</a></td>
+			        </tr>
+			        <tr>
+			            <th>所属</th>
+			            <td>合同会社リンクネクスト</td>
+			        </tr>
+			        <tr>
+			            <th>場所</th>
+			            <td>大阪 - タイ</td>
+			        </tr>
+			        <tr>
+			            <th>趣味</th>
+			            <td>資産運用、Webサイト作成、ライフハック、政治経済</td>
+			        </tr>
+			        <tr>
+			            <th>好き</th>
+			            <td>シンプル、東南アジア、緑色、自然、お寿司、優しいお味の料理</td>
+			        </tr>
+            </tbody>
 					</table>
 					<h2 id="product">プロダクト</h2>
-	                <div class="row">
-	                	<div class="col-md-12">
-		                  <div class="col-md-4">test</div>
-		                  <div class="col-md-4">test</div>
-		                  <div class="col-md-4">test</div>
-	                	</div>
-	                </div>
-	                <h2 id="a3">言語</h2>
+            <div class="row">
+            	<div class="col-md-12">
+                <div class="col-md-4">test</div>
+                <div class="col-md-4">test</div>
+                <div class="col-md-4">test</div>
+            	</div>
+            </div>
+            <h2 id="a3">言語</h2>
 					<table class="table">
-					    <tbody>
-					        <tr>
-					            <th>分かる</th>
-					            <td>日本語</td>
-					        </tr>
-					        <tr>
-					            <th>ぼちぼち</th>
-					            <td>php、MySQL、html、css</td>
-					        </tr>
-					        <tr>
-					            <th>何となく</th>
-					            <td>ruby、linux、javascript、English</td>
-					        </tr>
-					        <tr>
-					            <th>やった事あるだけ</th>
-					            <td>sqlite3、C言語、Java</td>
-					        </tr>
-	                    </tbody>
+				    <tbody>
+				        <tr>
+				            <th>分かる</th>
+				            <td>日本語</td>
+				        </tr>
+				        <tr>
+				            <th>ぼちぼち</th>
+				            <td>php、MySQL、html、css</td>
+				        </tr>
+				        <tr>
+				            <th>何となく</th>
+				            <td>ruby、linux、javascript、English</td>
+				        </tr>
+				        <tr>
+				            <th>やった事あるだけ</th>
+				            <td>sqlite3、C言語、Java</td>
+				        </tr>
+            </tbody>
 					</table>
-	                <h2 id="a4">フレームワーク</h2>
+          <h2 id="a4">フレームワーク</h2>
 					<table class="table">
-					    <tbody>
-					        <tr>
-					            <th>ぼちぼち</th>
-					            <td>rails、wordpress、jQuery、bootstrap3</td>
-					        </tr>
-					        <tr>
-					            <th>何となく</th>
-					            <td>bootstrap4</td>
-					        </tr>
-					        <tr>
-					            <th>やった事あるだけ</th>
-					            <td>vue、nuxt</td>
-					        </tr>
-	                    </tbody>
+				    <tbody>
+				        <tr>
+				            <th>ぼちぼち</th>
+				            <td>rails、wordpress、jQuery、bootstrap3</td>
+				        </tr>
+				        <tr>
+				            <th>何となく</th>
+				            <td>bootstrap4</td>
+				        </tr>
+				        <tr>
+				            <th>やった事あるだけ</th>
+				            <td>vue、nuxt</td>
+				        </tr>
+            </tbody>
 					</table>
-	                <h2 id="a5">開発環境</h2>
+          <h2 id="a5">開発環境</h2>
 					<table class="table">
-					    <tbody>
-					        <tr>
-					            <th>利用環境</th>
-					            <td>Windows7 Pro、Windows10 Home Premium</td>
-					        </tr>
-					        <tr>
-					            <th>使用エディタ</th>
-					            <td>サクラエディタ、vim、Atom</td>
-					        </tr>
-	                    </tbody>
+				    <tbody>
+				        <tr>
+				            <th>利用環境</th>
+				            <td>Windows7 Pro、Windows10 Home Premium</td>
+				        </tr>
+				        <tr>
+				            <th>使用エディタ</th>
+				            <td>サクラエディタ、vim、Atom</td>
+				        </tr>
+            </tbody>
 					</table>
 			</div>
 		</div>
 		<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <p class="text-muted">Copyright © 2019 がおポートフォリオ All Rights Reserved.</p>
-  </div>
-</footer>
+		<footer class="footer">
+		  <div class="container">
+		    <p class="text-muted">Copyright © 2019 がおポートフォリオ All Rights Reserved.</p>
+		  </div>
+		</footer>
 	</body>
 </html>
