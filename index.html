@@ -18,7 +18,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<style type="text/css">
 			h2 {
-			    margin-top: 1em;
+			    margin-top: 1em; 
 			}
 			
 			.img_myself {
@@ -29,6 +29,16 @@
 	        width: 200px;
 	        border: 5px solid white;
 	        box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+	    }
+	    .home {
+	    	position: relative;
+	    }
+	    .home div.center_box{
+	    	position: absolute;
+    	  top: 50%;
+			  left: 50%;
+			  transform: translateY(-50%) translateX(-50%);
+			  -webkit-transform: translateY(-50%) translateX(-50%);
 	    }
 		</style>
 	</head>
@@ -74,43 +84,48 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-8 offset-md-2">
-					<section id="banner">
-						<div class="inner">
-            	<h2 id="a1">がおについて</h2>
-            	<div class="img_myself"><img src="../picture/myself_image.png"></img></div>
-							<p>あまり社会人っぽくない人。東南アジア移住が当面の目標。</p>
-						</div>
-					</section>
+					<!-- Home -->
+					<div class="home">
+						<p>GAO's Portfolio</p>
+					</div>
 					
-          <h2 id="a2">自己紹介</h2>
-					<table class="table">
-				    <tbody>
-			        <tr>
-			            <th>名前</th>
-			            <td>がお</td>
-			        </tr>
-			        <tr>
-			            <th>Twitter</th>
-			            <td><a href="https://twitter.com/evening_grow_g" target="_blank">@gao</a></td>
-			        </tr>
-			        <tr>
-			            <th>所属</th>
-			            <td>合同会社リンクネクスト</td>
-			        </tr>
-			        <tr>
-			            <th>場所</th>
-			            <td>大阪 - タイ</td>
-			        </tr>
-			        <tr>
-			            <th>趣味</th>
-			            <td>資産運用、Webサイト作成、ライフハック、政治経済</td>
-			        </tr>
-			        <tr>
-			            <th>好き</th>
-			            <td>シンプル、東南アジア、緑色、自然、お寿司、優しいお味の料理</td>
-			        </tr>
-            </tbody>
-					</table>
+					<!-- Profile -->
+					<div class="profile">
+          	<h2 id="a1">がおについて</h2>
+          	<div class="img_myself"><img src="../picture/myself_image.png"></img></div>
+						<p>あまり社会人っぽくない人。東南アジア移住が当面の目標。</p>
+						
+						<table class="table">
+					    <tbody>
+				        <tr>
+				            <th>名前</th>
+				            <td>がお</td>
+				        </tr>
+				        <tr>
+				            <th>Twitter</th>
+				            <td><a href="https://twitter.com/evening_grow_g" target="_blank">@gao</a></td>
+				        </tr>
+				        <tr>
+				            <th>所属</th>
+				            <td>合同会社リンクネクスト</td>
+				        </tr>
+				        <tr>
+				            <th>場所</th>
+				            <td>大阪 - タイ</td>
+				        </tr>
+				        <tr>
+				            <th>趣味</th>
+				            <td>資産運用、Webサイト作成、ライフハック、政治経済</td>
+				        </tr>
+				        <tr>
+				            <th>好き</th>
+				            <td>シンプル、東南アジア、緑色、自然、お寿司、優しいお味の料理</td>
+				        </tr>
+	            </tbody>
+						</table>
+					</div>
+					
+					<!-- Product -->
 					<h2 id="product">作成Webアプリ</h2>
             <div class="row">
               <div class="col-md-4">ガッてな</div>
@@ -122,24 +137,26 @@
               <div class="col-md-4">AmazonAPI連動ゲーム発売カレンダー</div>
               <div class="col-md-4">V-1GPメインサイト</div>
             </div>
-            <h2 id="a3">言語</h2>
+          
+					<!-- Language -->
+          <h2 id="a3">言語</h2>
 					<table class="table">
 				    <tbody>
 				        <tr>
-				            <th>分かる</th>
+				            <th>ワカル</th>
 				            <td>日本語</td>
 				        </tr>
 				        <tr>
-				            <th>ぼちぼち</th>
+				            <th>ボチボチ</th>
 				            <td>php、MySQL、html、css</td>
 				        </tr>
 				        <tr>
-				            <th>何となく</th>
+				            <th>チョット</th>
 				            <td>ruby、linux、javascript、English</td>
 				        </tr>
 				        <tr>
-				            <th>やった事あるだけ</th>
-				            <td>sqlite3、C言語、Java</td>
+				            <th>ビミョウ</th>
+				            <td>sqlite3、C言語、Java<、python/td>
 				        </tr>
             </tbody>
 					</table>
@@ -147,15 +164,15 @@
 					<table class="table">
 				    <tbody>
 				        <tr>
-				            <th>ぼちぼち</th>
+				            <th>ボチボチ</th>
 				            <td>rails、wordpress、jQuery、bootstrap3</td>
 				        </tr>
 				        <tr>
-				            <th>何となく</th>
+				            <th>チョット</th>
 				            <td>bootstrap4</td>
 				        </tr>
 				        <tr>
-				            <th>やった事あるだけ</th>
+				            <th>ビミョウ</th>
 				            <td>vue、nuxt</td>
 				        </tr>
             </tbody>
