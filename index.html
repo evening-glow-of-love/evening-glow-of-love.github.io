@@ -64,11 +64,26 @@
 	        border: 5px solid white;
 	        box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 	    }
+	    
+	    .flat_btn {
+			  display: inline-block;
+			  padding: 0.3em 1em;
+			  text-decoration: none;
+			  color: #67c5ff;
+			  border: solid 2px #67c5ff;
+			  border-radius: 3px;
+			  transition: .4s;
+			}
+			
+			.flat_btn:hover {
+			  background: #67c5ff;
+			  color: white;
+			}
 	    .home {
 	    	position: relative;
 	    	height: 100vh;
 	    }
-	    .releative {
+	    .reletive {
 	    	position: relative;
 	    }
 	    .center_box{
@@ -82,7 +97,7 @@
 		  	font-family: "Audiowide";
 		  	font-size: 50px;
 		  }
-		  .works {
+		  .full_screen_height {
 		  	min-height: 100vh;
 		  }
 		</style>
@@ -100,9 +115,6 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#a1">profile</a>
             </li>
             <li class="nav-item">
@@ -116,6 +128,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#a5">development environment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#a5">contact as</a>
             </li>
           </ul>
         </div>
@@ -131,6 +146,9 @@
 						<div class="center_box">
 							<p class="color_green">GAO's Portfolio</p>
 						</div>
+						<div class="img_nikukyu">
+							<img src="../pictures/nikukyu.png" />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -142,9 +160,9 @@
           	<h2 id="a1" class="color_orange">Profile</h2>
             <div class="row">
               <div class="col-md-4">
-		          	<div class="img_myself"><img src="../picture/myself_image.png"></img></div>
+		          	<div class="img_myself"><img src="../pictures/myself_image.png" /></div>
               </div>
-              <div class="col-md-8 releative">
+              <div class="col-md-8 reletive">
 								<div class="center_box" style="left:36%;">
 									<p>あまり社会人っぽくない人。東南アジア移住が当面の目標。</p>
 								</div>
@@ -152,9 +170,9 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-		          	<div class="img_myself"><img src="../picture/mycat_image.png"></img></div>
+		          	<div class="img_myself"><img src="../pictures/mycat_image.png" /></div>
               </div>
-              <div class="col-md-8 releative">
+              <div class="col-md-8 reletive">
 								<div class="center_box" style="left:36%;">
 									<p>マイペットキャット。超絶人見知りわがまま甘えん坊な男の子。</p>
 	              </div>
@@ -194,9 +212,9 @@
 			</div>
 				
 			<!-- Product -->
-			<div class="row">
+			<div class="row full_screen_height">
 				<div class="col-md-8 offset-md-2">
-					<h2 id="works" class="works green">Works</h2>
+					<h2 id="works" class="green">Works</h2>
           <div class="row">
             <div class="col-md-4"><div class="sample_image">ガッてな</div></div>
             <div class="col-md-4"><div class="sample_image">GameOperaテンプレート</div></div>
@@ -268,6 +286,18 @@
 				        </tr>
             </tbody>
 					</table>
+				</div>
+			</div>
+		</div>
+				
+		<!-- contact as -->
+		<div class="row full_screen_height">
+			<div class="col-md-8 offset-md-2">
+				<div class="reletive">
+					<h2 id="contactas" class="contactas green">CONTACT AS</h2>
+					<div class="center_box">
+						<a class="flat_btn" href="">Please send here!</a>
+					</div>
 				</div>
 			</div>
 		</div>
