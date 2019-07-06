@@ -56,7 +56,7 @@
 			}
 	    .img_myself img {
 	        border-radius: 50%;
-	        width: 200px;
+	        width: 100%;
 	        border: 5px solid white;
 	        box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 	    }
@@ -64,7 +64,10 @@
 	    	position: relative;
 	    	height: 100vh;
 	    }
-	    .home div.center_box{
+	    .releative {
+	    	position: relative;
+	    }
+	    div.center_box{
 	    	position: absolute;
     	  top: 50%;
 			  left: 50%;
@@ -133,16 +136,20 @@
               <div class="col-md-4">
 		          	<div class="img_myself"><img src="../picture/myself_image.png"></img></div>
               </div>
-              <div class="col-md-8">
-								<p>あまり社会人っぽくない人。東南アジア移住が当面の目標。</p>
+              <div class="col-md-8 releative">
+								<div class="center_box" style="left:36%;">
+									<p>あまり社会人っぽくない人。東南アジア移住が当面の目標。</p>
+								</div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-4">
 		          	<div class="img_myself"><img src="../picture/mycat_image.png"></img></div>
               </div>
-              <div class="col-md-8">
-								<p>マイペットキャット。超絶人見知りわがまま甘えん坊な男の子。</p>
+              <div class="col-md-8 releative">
+								<div class="center_box" style="left:36%;">
+									<p>マイペットキャット。超絶人見知りわがまま甘えん坊な男の子。</p>
+	              </div>
               </div>
             </div>
 						
