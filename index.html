@@ -18,6 +18,28 @@
 		<link rel="stylesheet" href="./mystyle.scss">
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<script type="text/javascript">
+		<!--
+			$(window).on('load',function() {
+			    $(function(){
+			       // #で始まるアンカーをクリックした場合に処理
+			       $('a[href^="#"]').click(function() {
+			          // スクロールの速度
+			          var speed = 400; // ミリ秒
+			          // アンカーの値取得
+			          var href= $(this).attr("href");
+			          // 移動先を取得
+			          var target = $(href == "#" || href == "" ? 'html' : href);
+			          // 移動先を数値で取得
+			          var position = target.offset().top;
+			          // スムーススクロール
+			          $('body,html').animate({scrollTop:position}, speed, 'swing');
+			          return false;
+			       });
+			    });
+			});
+		-->
+		</script>
 		<style type="text/css">
 			@font-face {
 			  font-family: "keifont";
@@ -142,7 +164,7 @@
               <a class="nav-link" href="#a5">development environment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#a5">contact as</a>
+              <a class="nav-link" href="#a6">contact as</a>
             </li>
           </ul>
         </div>
@@ -303,7 +325,7 @@
 		</div>
 				
 		<!-- contact as -->
-		<div class="row">
+		<div id="a6" class="row">
 			<div class="col-md-8 offset-md-2">
 				<div class="reletive full_screen_height">
 					<h2 id="contactas" class="contactas green">CONTACT AS</h2>
